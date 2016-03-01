@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1CB2613F-29B8-48DB-A7F6-D44E5115BBF1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>StageTelerikAcademy.Core</RootNamespace>
+    <AssemblyName>StageTelerikAcademy.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <ReferencePath>$(ProgramFiles)\Common Files\microsoft shared\VSTT\$(VisualStudioVersion)\UITestExtensionPackages</ReferencePath>
+    <IsCodedUITest>False</IsCodedUITest>
+    <TestProjectType>UnitTest</TestProjectType>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ArtOfTest.WebAii, Version=2015.3.1015.0, Culture=neutral, PublicKeyToken=4fd5f65be123776c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\TestingFramework.Core\Lib\ArtOfTest.WebAii.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="Telerik.TestingFramework.Controls.KendoUI, Version=2015.3.1015.0, Culture=neutral, PublicKeyToken=528163f3e645de45, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\TestingFramework.Core\Lib\Telerik.TestingFramework.Controls.KendoUI.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.TestStudio.Translators.KendoUI, Version=2015.3.1015.0, Culture=neutral, PublicKeyToken=528163f3e645de45, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\TestingFramework.Core\Lib\Telerik.TestStudio.Translators.KendoUI.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WebAii.Controls.Html, Version=2015.3.1015.0, Culture=neutral, PublicKeyToken=528163f3e645de45, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\TestingFramework.Core\Lib\Telerik.WebAii.Controls.Html.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <Choose>
+    <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+      </ItemGroup>
+    </When>
+    <Otherwise>
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework" />
+      </ItemGroup>
+    </Otherwise>
+  </Choose>
+  <ItemGroup>
+    <Compile Include="Facades\ExportResultsFacade.cs" />
+    <Compile Include="Facades\HomeworkEvaluationFacade.cs" />
+    <Compile Include="Facades\ImportResultFacade.cs" />
+    <Compile Include="Facades\ImportTeamsFacade.cs" />
+    <Compile Include="Facades\StudentsRecordsFacade.cs" />
+    <Compile Include="Facades\TeamworksFacade.cs" />
+    <Compile Include="Pages\Admin\Evaluation\AddBonusPage\AddBonusPage.cs" />
+    <Compile Include="Pages\Admin\Evaluation\AddBonusPage\AddBonusPageAsserter.cs" />
+    <Compile Include="Pages\Admin\Evaluation\AddBonusPage\AddBonusPageMap.cs" />
+    <Compile Include="Pages\Admin\Evaluation\EvaluationExportPage\EvaluationExportPage.cs" />
+    <Compile Include="Pages\Admin\Evaluation\EvaluationExportPage\EvaluationExportPageAsserter.cs" />
+    <Compile Include="Pages\Admin\Evaluation\EvaluationExportPage\EvaluationExportPageMap.cs" />
+    <Compile Include="Pages\Admin\Evaluation\UserInCourseHelpers\UserInCourseHelpersPageAsserter.cs" />
+    <Compile Include="Pages\Admin\Evaluation\UserInCourseHelpers\UserInCourseHelpersPageMap.cs" />
+    <Compile Include="Pages\Admin\Evaluation\UserInCourseHelpers\UserInCourseHelpersPage.cs" />
+    <Compile Include="Pages\Admin\Teamwork\ImportOfTeamNamesPage\ImportOfTeamNamesPage.cs" />
+    <Compile Include="Pages\Admin\Teamwork\ImportOfTeamNamesPage\ImportOfTeamNamesPageAsserter.cs" />
+    <Compile Include="Pages\Admin\Teamwork\ImportOfTeamNamesPage\ImportOfTeamNamesPageMap.cs" />
+    <Compile Include="Pages\Admin\Evaluation\ImportResultsPage\ImportResultPage.cs" />
+    <Compile Include="Pages\Admin\Evaluation\ImportResultsPage\ImportResultPageAsserter.cs" />
+    <Compile Include="Pages\Admin\Evaluation\ImportResultsPage\ImportResultPageMap.cs" />
+    <Compile Include="Pages\Admin\Evaluation\GenerateProtocolPage\GenerateProtocolPage.cs" />
+    <Compile Include="Pages\Admin\Evaluation\GenerateProtocolPage\GenerateProtocolPageAsserter.cs" />
+    <Compile Include="Pages\Admin\Evaluation\GenerateProtocolPage\GenerateProtocolPageMap.cs" />
+    <Compile Include="Pages\Admin\Teamwork\ImportTeamsPage\ImportTeamsPage.cs" />
+    <Compile Include="Pages\Admin\Teamwork\ImportTeamsPage\ImportTeamsPageAsserter.cs" />
+    <Compile Include="Pages\Admin\Teamwork\ImportTeamsPage\ImportTeamsPageMap.cs" />
+    <Compile Include="Pages\Admin\Teamwork\ParticipatingInTeamworkPagе\ParticipatingInTeamworkPageAsserter.cs" />
+    <Compile Include="Pages\Admin\Teamwork\ParticipatingInTeamworkPagе\ParticipatingInTeamworkPagе.cs" />
+    <Compile Include="Pages\Admin\Teamwork\ParticipatingInTeamworkPagе\ParticipatingInTeamworkPagеMap.cs" />
+    <Compile Include="Pages\Admin\Evaluation\TestRegisteringPage\TestRegisteringPage.cs" />
+    <Compile Include="Pages\Admin\Evaluation\TestRegisteringPage\TestRegisteringPageAsserter.cs" />
+    <Compile Include="Pages\Admin\Evaluation\TestRegisteringPage\TestRegisteringPageMap.cs" />
+    <Compile Include="Pages\Admin\AdminNavigationPage\AdminNavigationPage.cs" />
+    <Compile Include="Pages\Admin\AdminNavigationPage\AdminNavigationPageAsserter.cs" />
+    <Compile Include="Pages\Admin\AdminNavigationPage\AdminNavigationPageMap.cs" />
+    <Compile Include="Pages\Admin\Teamwork\TeamMemberAllEvaluationsPage\TeamMemberAllEvaluationsPage.cs" />
+    <Compile Include="Pages\Admin\Teamwork\TeamMemberAllEvaluationsPage\TeamMemberAllEvaluationsPageAsserter.cs" />
+    <Compile Include="Pages\Admin\Teamwork\TeamMemberAllEvaluationsPage\TeamMemberAllEvaluationsPageMap.cs" />
+    <Compile Include="Pages\Admin\Teamwork\TeamMemberEvaluationsPage\TeamMemberEvaluationsPage.cs" />
+    <Compile Include="Pages\Admin\Teamwork\TeamMemberEvaluationsPage\TeamMemberEvaluationsPageAsserter.cs" />
+    <Compile Include="Pages\Admin\Teamwork\TeamMemberEvaluationsPage\TeamMemberEvaluationsPageMap.cs" />
+    <Compile Include="Pages\Admin\Teamwork\TeamworksPage\TeamworksPage.cs" />
+    <Compile Include="Pages\Admin\Teamwork\TeamworksPage\TeamworksPageAsserter.cs" />
+    <Compile Include="Pages\Admin\Teamwork\TeamworksPage\TeamworksPageMap.cs" />
+    <Compile Include="Pages\Frontend\ExamRegisteringPage\ExamRegisteringPage.cs" />
+    <Compile Include="Pages\Frontend\ExamRegisteringPage\ExamRegisteringPageAsserter.cs" />
+    <Compile Include="Pages\Frontend\ExamRegisteringPage\ExamRegisteringPageMap.cs" />
+    <Compile Include="Pages\Frontend\HomeworkEvaluationsPage\HomeworkEvaluationsPage.cs" />
+    <Compile Include="Pages\Frontend\HomeworkEvaluationsPage\HomeworkEvaluationsPageAsserter.cs" />
+    <Compile Include="Pages\Frontend\HomeworkEvaluationsPage\HomeworkEvaluationsPageMap.cs" />
+    <Compile Include="Pages\Frontend\OtherStudentsCommentsPage\OtherStudentsCommentsPage.cs" />
+    <Compile Include="Pages\Frontend\OtherStudentsCommentsPage\OtherStudentsCommentsPageAsserter.cs" />
+    <Compile Include="Pages\Frontend\OtherStudentsCommentsPage\OtherStudentsCommentsPageMap.cs" />
+    <Compile Include="Pages\Frontend\TeamworkListPage\TeamworkListPage.cs" />
+    <Compile Include="Pages\Frontend\TeamworkListPage\TeamworkListPageMap.cs" />
+    <Compile Include="Pages\Frontend\TeamworkPage\TeamworkPage.cs" />
+    <Compile Include="Pages\Frontend\TeamworkPage\TeamworkPageAsserter.cs" />
+    <Compile Include="Pages\Frontend\TeamworkPage\TeamworkPageMap.cs" />
+    <Compile Include="Pages\Frontend\UploadReuploadHomeworkPage\UploadReuploadHomeworkPage.cs" />
+    <Compile Include="Pages\Frontend\UploadReuploadHomeworkPage\UploadReuploadHomeworkPageAsserter.cs" />
+    <Compile Include="Pages\Frontend\UploadReuploadHomeworkPage\UploadReuploadHomeworkPageMap.cs" />
+    <Compile Include="Pages\LoginPage\LoginPage.cs" />
+    <Compile Include="Pages\LoginPage\LoginPageAsserter.cs" />
+    <Compile Include="Pages\LoginPage\LoginPageMap.cs" />
+    <Compile Include="Pages\Admin\Evaluation\StudentsRecordsPage\StudentsRecordsPage.cs" />
+    <Compile Include="Pages\Admin\Evaluation\StudentsRecordsPage\StudentsRecordsPageAsserter.cs" />
+    <Compile Include="Pages\Admin\Evaluation\StudentsRecordsPage\StudentsRecordsPageMap.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TestingFramework.Core\TestingFramework.Core.csproj">
+      <Project>{80a1fafc-49b0-4df5-9eb7-a128d0ef97ad}</Project>
+      <Name>TestingFramework.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Choose>
+    <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.CodedUITestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITest.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITest.Extension, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITesting, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+      </ItemGroup>
+    </When>
+  </Choose>
+  <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

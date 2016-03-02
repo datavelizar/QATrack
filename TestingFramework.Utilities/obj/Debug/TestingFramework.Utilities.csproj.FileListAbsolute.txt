@@ -3,3 +3,8 @@ D:\001. SQA\Teamworks\FromIliasAccount\Team Archer TILS\TestingFramework\Testing
 D:\001. SQA\Teamworks\FromIliasAccount\Team Archer TILS\TestingFramework\TestingFramework.Utilities\obj\Debug\TestingFramework.Utilities.csprojResolveAssemblyReference.cache
 D:\001. SQA\Teamworks\FromIliasAccount\Team Archer TILS\TestingFramework\TestingFramework.Utilities\obj\Debug\TestingFramework.Utilities.dll
 D:\001. SQA\Teamworks\FromIliasAccount\Team Archer TILS\TestingFramework\TestingFramework.Utilities\obj\Debug\TestingFramework.Utilities.pdb
+D:\QATrack-CustomTestingFramework\TestingFramework.Utilities\bin\Debug\TestingFramework.Utilities.dll
+D:\QATrack-CustomTestingFramework\TestingFramework.Utilities\bin\Debug\TestingFramework.Utilities.pdb
+D:\QATrack-CustomTestingFramework\TestingFramework.Utilities\obj\Debug\TestingFramework.Utilities.csprojResolveAssemblyReference.cache
+D:\QATrack-CustomTestingFramework\TestingFramework.Utilities\obj\Debug\TestingFramework.Utilities.dll
+D:\QATrack-CustomTestingFramework\TestingFramework.Utilities\obj\Debug\TestingFramework.Utilities.pdb

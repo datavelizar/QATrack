@@ -11,3 +11,16 @@ D:\001. SQA\Teamworks\FromIliasAccount\Team Archer TILS\TestingFramework\StageTe
 D:\001. SQA\Teamworks\FromIliasAccount\Team Archer TILS\TestingFramework\StageTelerikAcademy.Core\obj\Debug\StageTelerikAcademy.Core.csprojResolveAssemblyReference.cache
 D:\001. SQA\Teamworks\FromIliasAccount\Team Archer TILS\TestingFramework\StageTelerikAcademy.Core\obj\Debug\StageTelerikAcademy.Core.dll
 D:\001. SQA\Teamworks\FromIliasAccount\Team Archer TILS\TestingFramework\StageTelerikAcademy.Core\obj\Debug\StageTelerikAcademy.Core.pdb
+D:\QATrack-CustomTestingFramework\StageTelerikAcademy.Core\bin\Debug\StageTelerikAcademy.Core.dll
+D:\QATrack-CustomTestingFramework\StageTelerikAcademy.Core\bin\Debug\StageTelerikAcademy.Core.pdb
+D:\QATrack-CustomTestingFramework\StageTelerikAcademy.Core\bin\Debug\TestingFramework.Core.dll
+D:\QATrack-CustomTestingFramework\StageTelerikAcademy.Core\bin\Debug\Telerik.TestStudio.Shared.dll
+D:\QATrack-CustomTestingFramework\StageTelerikAcademy.Core\bin\Debug\Autofac.dll
+D:\QATrack-CustomTestingFramework\StageTelerikAcademy.Core\bin\Debug\YamlDotNet.dll
+D:\QATrack-CustomTestingFramework\StageTelerikAcademy.Core\bin\Debug\Microsoft.CompilerServices.AsyncTargetingPack.Net4.dll
+D:\QATrack-CustomTestingFramework\StageTelerikAcademy.Core\bin\Debug\Telerik.TestStudio.Theme.dll
+D:\QATrack-CustomTestingFramework\StageTelerikAcademy.Core\bin\Debug\Newtonsoft.Json.dll
+D:\QATrack-CustomTestingFramework\StageTelerikAcademy.Core\bin\Debug\TestingFramework.Core.pdb
+D:\QATrack-CustomTestingFramework\StageTelerikAcademy.Core\obj\Debug\StageTelerikAcademy.Core.csprojResolveAssemblyReference.cache
+D:\QATrack-CustomTestingFramework\StageTelerikAcademy.Core\obj\Debug\StageTelerikAcademy.Core.dll
+D:\QATrack-CustomTestingFramework\StageTelerikAcademy.Core\obj\Debug\StageTelerikAcademy.Core.pdb
